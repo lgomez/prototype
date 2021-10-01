@@ -1,9 +1,10 @@
 import { Router, Link } from "@reach/router"
+import logo from './logo.svg';
 import './App.css';
 
 
 const Nav = () => <ul>
-  <li><Link to="/">Kocomo</Link></li>
+  <Link to="/"><img src={logo} className="App-logo" alt="logo" /></Link>
 
   <li><h3>Homes</h3></li>
   <li><Link to="locations/huatulco">huatulco</Link></li>
